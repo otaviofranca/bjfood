@@ -4,21 +4,27 @@
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<div class="btn-group" role="group" aria-label="Basic example">
-			<button type="button" class="btn btn-secondary">Home</button>
-			<button type="button" class="btn btn-secondary">Quem Somos</button>
-			<button type="button" class="btn btn-secondary">LOCALIZAÇÂO</button>
+			<button id="btnhome"type="button" class="btn btn-secondary">Home</button>
+			<a href="https://www.instagram.com/otavio_fraca/"><button  type="button" class="btn btn-secondary">Quem Somos</button></a>
+			<button  onclick="alert('Serviço indisponível no momento')"type="button" class="btn btn-secondary">LOCALIZAÇÂO</button>  
 		  </div>
 		<title>Bjfood</title>
+		
 	</head>
 
 	<body style='display: display: grid; place-items:center;'>
-
+			<script>
+				var botao1 = document.getElementById("btnhome");    // evento adicionado
+				botao1.addEventListener('click', function(){
+					alert('você já esta na home')
+				})
+			</script>
 
 
 		<h1>BJfood</h1>
 		<h2>  serviço online de entregas de comida</h2>
 		<h2>  peça seu lanche e coma feliz ;)</h2>
-		<div class="alert alert-dark" role="alert">
+		<div class="alert alert-dark" role="alert">                    
 			serviço online de entregas de comida
 		  </div>
 
@@ -36,7 +42,7 @@
 			<p> X-Búrguer</p>
 				<p> X-Americano</p>
 				<p>X-Tudo </p>
-					<p> X-Monstro</p>
+					<p> X-Monstro</p> 
 					<p></p>
 
 
@@ -66,8 +72,8 @@
 		<hr> <hr>
 							<p><em>Reduzir as bebidas gaseificadas resultará em níveis de glicose (açúcar no sangue) mais constantes e mais baixos, o que significa menor risco de diabetes e doenças cardiovasculares.<br> Eliminar as 150 calorias de cada bebida gaseificada da sua alimentação irá ajudá-lo a emagrecer ou a manter o seu peso</em></p>
 		<hr>
-		<p><button>contate-nos</button></p>
-		<p><button>voltar</button></p>
+		<p><button onclick="alert('ATENÇÃO VIRUS NO SEU COMPUTADOR')">contate-nos</button></p>  
+		<button>voltar</button>
 		</body>
 	</html>
 
